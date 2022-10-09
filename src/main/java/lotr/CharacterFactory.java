@@ -1,10 +1,19 @@
 package lotr;
 
-import java.util.Random;
-
 public class CharacterFactory {
-    public static Character createCharacter(){
-        lotr.Character[] characters = {new Hobbit(), new King(), new Knight(), new Elf()};
-        return characters[new Random().nextInt(characters.length)];
+    public static int characterCount=4;
+    public static Character createCharacter(int channel){
+        switch (channel){
+            case 0:
+                return new Hobbit();
+            case 1:
+                return new King();
+            case 2:
+                return new Knight();
+            case 3:
+                return new Elf();
+            default:
+                throw new IllegalArgumentException("Character creation failure");
+        }
     }
 }
