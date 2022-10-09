@@ -1,5 +1,7 @@
 package lotr;
 
+import java.util.Random;
+
 public class GameManager {
 
     public static void fight(Character c1, Character c2){
@@ -35,8 +37,8 @@ public class GameManager {
         }
     }
     public static void main(String[] args) {
-        Character c1 = CharacterFactory.createCharacter();
-        Character c2 = CharacterFactory.createCharacter();
+        Character c1 = CharacterFactory.createCharacter(new Random().nextInt(CharacterFactory.characterCount));
+        Character c2 = CharacterFactory.createCharacter(new Random().nextInt(CharacterFactory.characterCount));
         fight(c1, c2);
     }
 }
