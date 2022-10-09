@@ -18,4 +18,5 @@ public class Hobbit extends lotr.Character {
     public String toString() {
         return String.format("Hobbit{hp=%d, power=%d}", getHp(), getPower());
     }
+
 }
