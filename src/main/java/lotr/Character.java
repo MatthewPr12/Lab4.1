@@ -1,8 +1,7 @@
 package lotr;
 
-import lombok.Getter;
+//import lombok.Getter;
 
-@Getter
 public class Character {
     private int hp;
     private int power;
@@ -37,5 +36,13 @@ public class Character {
                 "hp=" + hp +
                 ", power=" + power +
                 '}';
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public int getPower() {
+        return power;
     }
 }
