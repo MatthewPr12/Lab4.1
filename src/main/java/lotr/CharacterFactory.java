@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class CharacterFactory {
     public static Character createCharacter(){
-        lotr.Character[] characters = {new Hobbit(), new King(), new Knight()};
+        lotr.Character[] characters = {new Hobbit(), new King(), new Knight(), new Elf()};
         return characters[new Random().nextInt(characters.length)];
     }
 }
