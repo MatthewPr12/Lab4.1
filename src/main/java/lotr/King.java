@@ -9,6 +9,10 @@ public class King extends Character {
 
     @Override
     public void kick(Character c){
-        c.setHp(c.getHp() - new Random().nextInt(c.getPower()));
+        c.setHp(c.getHp() - new Random().nextInt(getPower()));
+    }
+    @Override
+    public String toString() {
+        return "King{hp=" + getHp() + ", power=" + getPower() + "}";
     }
 }

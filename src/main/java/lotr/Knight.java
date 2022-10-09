@@ -9,6 +9,11 @@ public class Knight extends Noble{
 
     @Override
     public void kick(Character c){
-        c.setHp(c.getHp() - new Random().nextInt(c.getPower()));
+        c.setHp(c.getHp() - new Random().nextInt(getPower()));
+    }
+
+    @Override
+    public String toString() {
+        return "Knight{hp=" + getHp() + ", power=" + getPower() + "}";
     }
 }
