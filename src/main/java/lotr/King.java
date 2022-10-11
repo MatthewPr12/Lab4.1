@@ -1,10 +1,12 @@
 package lotr;
+import kick.NobleKick;
 
 import java.util.Random;
 
 public class King extends Character {
     public King(){
-        super(new Random().nextInt(10) + 5, new Random().nextInt(10) + 5);
+//        super(new Random().nextInt(10) + 5, new Random().nextInt(10) + 5);
+        super(50, 50);
     }
 
     @Override
