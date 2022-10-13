@@ -26,5 +26,4 @@ public class KingTest {
     public void testPower() {
         assertTrue(character.getPower() >= 5 && character.getPower() <= 15);
     }
-
 }
