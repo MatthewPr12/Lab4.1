@@ -11,7 +11,11 @@ public class GameManager {
         System.out.println("Character2 : ");
         System.out.println(c2.toString());
         if(c1 instanceof Hobbit && c2 instanceof Hobbit){
-            System.out.println("Humanity's not ready for the buttle between two Hobbits");
+            System.out.println("Humanity's not ready for the battle between two Hobbits");
+            return;
+        } else if (c1 instanceof Elf && c2 instanceof Elf) {
+            System.out.println("The Elf met his friend other Elf. Obviously they won't fight each other;)))");
+            System.out.println("Friendship is a true miracle");
             return;
         }
         int counter=0;
@@ -21,7 +25,7 @@ public class GameManager {
             System.out.println("Round " + counter);
             System.out.println("Outstanding move from " + c1.getClass().getSimpleName());
             c1.kick(c2);
-            System.out.println(c2.getClass().getSimpleName() + "'s hp : " + c2.getHp());
+            System.out.println(c2);
             if(!c2.isAlive()){
                 System.out.println("Game's over for " + c2.getClass().getSimpleName());
                 break;
@@ -29,7 +33,8 @@ public class GameManager {
             System.out.println("*******");
             System.out.println("Powerful response from " + c2.getClass().getSimpleName());
             c2.kick(c1);
-            System.out.println(c1.getClass().getSimpleName() + "'s hp : " + c1.getHp());
+            System.out.println(c1);
+//            System.out.println(c1.getClass().getSimpleName() + "'s hp : " + c1.getHp());
             if(!c1.isAlive()){
                 System.out.println(c2.getClass().getSimpleName() + " is a winner today");
                 break;
