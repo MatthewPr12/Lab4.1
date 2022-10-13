@@ -1,6 +1,5 @@
 package lotr;
 
-//import lombok.Getter;
 
 public class Hobbit extends lotr.Character {
 

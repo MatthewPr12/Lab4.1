@@ -11,12 +11,6 @@ public class Elf extends Character {
     @Override
     public void kick(Character c){
         kick_strategy.kick(this, c);
-//        if(getPower() > c.getPower()){
-//            c.setHp(0);
-//        }
-//        else{
-//            c.setPower(c.getPower()-1);
-//        }
     }
 
     @Override

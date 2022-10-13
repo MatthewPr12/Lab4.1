@@ -34,7 +34,6 @@ public class GameManager {
             System.out.println("Powerful response from " + c2.getClass().getSimpleName());
             c2.kick(c1);
             System.out.println(c1);
-//            System.out.println(c1.getClass().getSimpleName() + "'s hp : " + c1.getHp());
             if(!c1.isAlive()){
                 System.out.println(c2.getClass().getSimpleName() + " is a winner today");
                 break;
